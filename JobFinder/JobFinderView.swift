@@ -18,8 +18,15 @@ struct JobSearch {
 
 extension JobSearch {
     var predicate: NSPredicate {
-        var format = "searchTitle = %@"
-        var args: [String] = [title!] // args could be [Any] if needed
+        var format = ""
+        var args: [String] = []
+        if title != nil, title != "All" {
+            format += "searchTitle CONTAINS[cd] %@"
+            args.append(title!)
+        } else {
+            format += "id > %@"
+            args.append("0")
+        }
         if type != nil, type != "All" {
             format += " and type = %@"
             args.append(type!)
@@ -28,6 +35,8 @@ extension JobSearch {
             format += " and location = %@"
             args.append(location!)
         }
+        print(format)
+        print(args)
         return NSPredicate(format: format, argumentArray:args)
     }
 }

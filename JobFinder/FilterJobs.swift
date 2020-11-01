@@ -29,13 +29,11 @@ struct FilterJobs: View {
                     }
                 }
                 Picker("Title", selection: $draft.title) {
-                    Text("All").tag(String?.none)
                     ForEach(jobs.jobTitles, id: \.self) { (jobTitle: String?) in
                         Text(jobTitle ?? "All").tag(jobTitle)
                     }
                 }
                 Picker("Location", selection: $draft.location) {
-                    Text("All").tag(String?.none)
                     ForEach(jobs.jobLocations, id: \.self) { (jobLocation: String?) in
                         Text(jobLocation ?? "All").tag(jobLocation)
                     }

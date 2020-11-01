@@ -9,7 +9,7 @@ import SwiftUI
 
 class Jobs: ObservableObject, Identifiable {
     
-    var jobTitles = ["Swift", "Python", "PHP"]
+    var jobTitles = ["All","Swift", "Python", "PHP"]
     var jobTypes = ["All","Full Time"]
     var jobLocations = ["All","Remote","San Jose", "Toronto", "Amsterdam"]
 }
