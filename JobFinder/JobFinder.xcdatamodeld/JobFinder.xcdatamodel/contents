@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Job" representedClassName="Job" syncable="YES" codeGenerationType="class">
+        <attribute name="company_logo" optional="YES" attributeType="String"/>
+        <attribute name="company_name_" optional="YES" attributeType="String"/>
+        <attribute name="company_url" optional="YES" attributeType="String"/>
+        <attribute name="created_at_" optional="YES" attributeType="String"/>
+        <attribute name="how_to_apply" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="job_description" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="searchTitle" optional="YES" attributeType="String"/>
+        <attribute name="title_" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Job" positionX="-580.796875" positionY="32.57421875" width="125.01953125" height="223"/>
+    </elements>
+</model>
